@@ -222,9 +222,8 @@
             <legend class="sr">Your details</legend>
             <div class="row">
               <label>Name<input type="text" name="name" autocomplete="name" required></label>
-              <label>Email<input type="email" name="email" autocomplete="email" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email" required aria-describedby="emailHint"><small class="hint" id="emailHint">Your confirmation is sent here</small></label>
             </div>
-            <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
             <label>Occasion or notes<textarea name="notes" rows="3" placeholder="Allergies, a birthday, a favourite table"></textarea></label>
             <div class="step__nav"><button type="button" class="btn btn--line" data-back>Back</button><button type="submit" class="btn btn--dark">Send request</button></div>
           </fieldset>

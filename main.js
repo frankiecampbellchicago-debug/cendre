@@ -101,7 +101,8 @@ function validate(step) {
       f.setAttribute('aria-describedby', msg.id);
       f.insertAdjacentElement('afterend', msg);
     } else {
-      f.removeAttribute('aria-describedby');
+      if (f.name === 'email') f.setAttribute('aria-describedby', 'emailHint');
+      else f.removeAttribute('aria-describedby');
     }
   });
   if (!ok) step.querySelector('[aria-invalid="true"]').focus();
@@ -119,7 +120,7 @@ form.addEventListener('submit', e => {
   const d = new FormData(form);
   const date = new Date(d.get('date') + 'T00:00').toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
   document.getElementById('summary').textContent =
-    `${d.get('name')}, a table for ${d.get('guests')} on ${date} at ${d.get('time')}. Seating: ${d.get('seat')}.`;
+    `${d.get('name')}, a table for ${d.get('guests')} on ${date} at ${d.get('time')}. Seating: ${d.get('seat')}. Your confirmation will be emailed to ${d.get('email')}.`;
   // TODO: connect to a form inbox (e.g. Formspree) or booking system before launch
   show(3);
 });

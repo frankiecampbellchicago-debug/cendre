@@ -225,6 +225,7 @@ p { margin: 0 0 1.1em; }
 .booking select { background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 40px; }
 .booking input:focus, .booking select:focus, .booking textarea:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 3px rgba(142, 71, 36, .15); }
 .booking [aria-invalid="true"] { border-color: #A3271B !important; }
+.hint { display: block; margin-top: 8px; font-size: .78rem; letter-spacing: 0; text-transform: none; color: var(--muted); }
 .err { display: block; margin-top: 8px; font-size: .78rem; letter-spacing: 0; text-transform: none; color: #A3271B; }
 .choices { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
 .choices label { margin: 0; }
