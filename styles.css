@@ -200,7 +200,6 @@ p { margin: 0 0 1.1em; }
   padding: 26px 0; font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1;
   opacity: .5; transition: opacity .4s var(--ease), padding-left .6s var(--ease);
 }
-.spaces__list .n { font-family: var(--sans); font-size: .72rem; letter-spacing: .2em; color: var(--accent); vertical-align: top; margin-right: 18px; }
 .spaces__list small { display: block; font-family: var(--sans); font-size: .9rem; font-weight: 300; color: var(--muted-dark); margin-top: 6px; max-height: 0; opacity: 0; overflow: hidden; transition: max-height .6s var(--ease), opacity .6s var(--ease); }
 .spaces__list button:hover, .spaces__list button:focus-visible, .spaces__list button.is-active { opacity: 1; }
 .spaces__list button.is-active { padding-left: 14px; }
