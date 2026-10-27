@@ -112,12 +112,9 @@ p { margin: 0 0 1.1em; }
 .hero__lede { max-width: 30rem; font-size: 1.08rem; color: var(--muted-dark); margin-bottom: 2.2rem; animation: rise 1.4s var(--ease) .4s both; }
 .hero .btns { animation: rise 1.4s var(--ease) .55s both; }
 .hero .label { animation: rise 1.4s var(--ease) both; }
-.scroll { position: absolute; z-index: 1; right: var(--gutter); bottom: 36px; font-size: .68rem; letter-spacing: .3em; text-transform: uppercase; text-decoration: none; color: var(--muted-dark); writing-mode: vertical-rl; padding-bottom: 54px; }
-.scroll::after { content: ""; position: absolute; left: 50%; bottom: 0; width: 1px; height: 44px; background: var(--muted-dark); transform-origin: top; animation: drip 2.4s var(--ease) infinite; }
 
 @keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
 @keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
-@keyframes drip { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 
 /* Story */
 .story { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
@@ -299,7 +296,6 @@ p { margin: 0 0 1.1em; }
   .nav__cta { display: none; }
   .nav__toggle { margin-left: auto; }
   .btns .btn { flex: 1 1 auto; }
-  .scroll { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
