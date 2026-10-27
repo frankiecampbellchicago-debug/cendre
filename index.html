@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cendre | Wood Fire &amp; Cellar</title>
+  <meta name="description" content="Cendre is a wood-fire kitchen and cellar bar. Dinner cooked over embers, a cellar poured by the glass, and a room kept in candlelight.">
+  <meta name="theme-color" content="#2A1610">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="logo" href="#top" aria-label="Cendre home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c1.6 3.6 6 6 6 11.6a6 6 0 0 1-12 0c0-3 1.6-4.8 2.6-6.6.2 1.8 1 3 2.2 3.4C14.4 10.6 14.8 7.6 16 5z"/></svg>
+        <span>Cendre</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#story">Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#spaces">Spaces</a></li>
+          <li><a href="#private">Private Dining</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--fill nav__cta" href="#reserve">Reserve</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <img class="hero__img"
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=75"
+        srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=70 800w,
+                https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=75 1600w,
+                https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2400&q=75 2400w"
+        sizes="100vw" alt="Candlelit table set for dinner with plated dishes and wine glasses" fetchpriority="high">
+      <div class="hero__content">
+        <p class="label">Wood fire &middot; Cellar &middot; Candlelight</p>
+        <h1>Dinner, cooked<br>over <em>embers.</em></h1>
+        <p class="hero__lede">One open hearth, one deep cellar, and a room kept low and golden until the last glass.</p>
+        <div class="btns">
+          <a class="btn btn--fill" href="#reserve">Reserve a table</a>
+          <a class="btn btn--ghost" href="#menu">Explore the menu</a>
+        </div>
+      </div>
+      <a class="scroll" href="#story">Scroll</a>
+    </section>
+
+    <!-- STORY -->
+    <section class="section section--light" id="story">
+      <div class="wrap story">
+        <figure class="story__img reveal-clip">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1100&q=75" alt="Chef preparing fresh ingredients on a cutting board" loading="lazy">
+        </figure>
+        <div class="story__text reveal">
+          <p class="label label--dark">The house</p>
+          <h2>Nothing here is <em>rushed.</em></h2>
+          <p>Every plate at Cendre passes through fire. Oak and almond wood burn down through the afternoon, and by the time the first guests sit, the hearth is a bed of embers ready for the evening.</p>
+          <p>Below the dining room, the cellar holds small growers, old vintages and the spirits behind our bar. You can eat from one, drink from the other, or let us choose for you.</p>
+          <p class="sig">&mdash; The Cendre kitchen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPLIT MENU (signature) -->
+    <section class="split" id="menu" data-active="none" aria-label="Menu: food and drinks">
+      <div class="split__tabs" role="tablist" aria-label="Choose a menu">
+        <button role="tab" id="tab-food" aria-controls="side-food" aria-selected="false" data-side="food">Food</button>
+        <button role="tab" id="tab-drinks" aria-controls="side-drinks" aria-selected="false" data-side="drinks">Drinks</button>
+      </div>
+
+      <div class="side side--food" id="side-food" role="tabpanel" aria-labelledby="tab-food" data-side="food">
+        <img class="side__bg" src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1600&q=75" alt="" loading="lazy">
+        <div class="side__inner">
+          <p class="label">From the fire</p>
+          <h2 class="side__title">Food</h2>
+          <ul class="menu-list">
+            <li><span class="mi__name">Oysters, ember butter</span><span class="mi__price">24</span><span class="mi__desc">Half dozen, charred lemon, chive</span></li>
+            <li><span class="mi__name">Beef tartare</span><span class="mi__price">22</span><span class="mi__desc">Smoked yolk, cornichon, rye crisp</span></li>
+            <li><span class="mi__name">Wood-roasted carrots</span><span class="mi__price">16</span><span class="mi__desc">Whipped feta, hazelnut dukkah, honey</span></li>
+            <li><span class="mi__name">Line-caught sea bass</span><span class="mi__price">42</span><span class="mi__desc">Brown butter, capers, grilled fennel</span></li>
+            <li><span class="mi__name">Dry-aged ribeye, 400g</span><span class="mi__price">78</span><span class="mi__desc">Bone marrow jus, ember-roasted shallot</span></li>
+            <li><span class="mi__name">Burnt honey tart</span><span class="mi__price">14</span><span class="mi__desc">Cr&egrave;me fra&icirc;che, sea salt</span></li>
+          </ul>
+          <a class="btn btn--ghost" href="#reserve">Book dinner</a>
+        </div>
+        <p class="side__hint" aria-hidden="true"><span>&larr;</span> Food</p>
+      </div>
+
+      <div class="side side--drinks" id="side-drinks" role="tabpanel" aria-labelledby="tab-drinks" data-side="drinks">
+        <img class="side__bg" src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=1600&q=75" alt="" loading="lazy">
+        <div class="side__inner">
+          <p class="label">From the cellar</p>
+          <h2 class="side__title">Drinks</h2>
+          <ul class="menu-list">
+            <li><span class="mi__name">Ember Old Fashioned</span><span class="mi__price">18</span><span class="mi__desc">Smoked bourbon, demerara, orange oil</span></li>
+            <li><span class="mi__name">Fig Negroni</span><span class="mi__price">17</span><span class="mi__desc">Gin, fig-steeped vermouth, bitter aperitivo</span></li>
+            <li><span class="mi__name">Garden Spritz</span><span class="mi__price">15</span><span class="mi__desc">Aperitivo, verjus, sparkling wine</span></li>
+            <li><span class="mi__name">Grower Champagne</span><span class="mi__price">26</span><span class="mi__desc">By the glass, Blanc de Blancs</span></li>
+            <li><span class="mi__name">Rioja Gran Reserva</span><span class="mi__price">21</span><span class="mi__desc">By the glass, from the cellar list</span></li>
+            <li><span class="mi__name">Smoked Pear (zero proof)</span><span class="mi__price">11</span><span class="mi__desc">Pear, rosemary, tonic</span></li>
+          </ul>
+          <a class="btn btn--ghost" href="#reserve">Book the bar</a>
+        </div>
+        <p class="side__hint" aria-hidden="true">Drinks <span>&rarr;</span></p>
+      </div>
+
+      <p class="split__cue" aria-hidden="true">Move left for food &middot; right for drinks</p>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="section section--light" id="private">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="label label--dark">Discover</p>
+          <h2>Three ways to spend <em>an evening</em></h2>
+        </header>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=75" alt="Amber cocktail on a dark bar top" loading="lazy"></div>
+            <p class="label label--dark">The bar</p>
+            <h3>Cellar Bar</h3>
+            <p>Walk-ins welcome. Cocktails built on smoke and fruit, small plates from the hearth, and a list of wines poured by the glass.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=75" alt="Layered raspberry cake on a dark plate" loading="lazy"></div>
+            <p class="label label--dark">Seven courses</p>
+            <h3>Chef&rsquo;s Tasting</h3>
+            <p>The kitchen cooks for you across seven courses, paired glass by glass from the cellar if you like. Served at the counter by the fire.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=75" alt="Private dining room with white tablecloths and large windows" loading="lazy"></div>
+            <p class="label label--dark">Up to 24 guests</p>
+            <h3>Private Dining</h3>
+            <p>A room of your own for birthdays, dinners and celebrations, with a set menu written around your table.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPACES -->
+    <section class="spaces" id="spaces">
+      <div class="spaces__bgs" aria-hidden="true">
+        <img class="is-active" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=75" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1800&q=75" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1800&q=75" alt="" loading="lazy">
+      </div>
+      <div class="wrap spaces__inner">
+        <p class="label">The spaces</p>
+        <ul class="spaces__list">
+          <li><button class="is-active" data-i="0" aria-pressed="true"><span class="n">01</span>Dining Room<small>Low light, deep booths, the hearth in view</small></button></li>
+          <li><button data-i="1" aria-pressed="false"><span class="n">02</span>The Bar<small>Twelve seats, no reservation needed</small></button></li>
+          <li><button data-i="2" aria-pressed="false"><span class="n">03</span>The Cellar<small>Tastings among four hundred bottles</small></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESERVE -->
+    <section class="section section--light" id="reserve">
+      <div class="wrap wrap--narrow">
+        <header class="head reveal">
+          <p class="label label--dark">Reservations</p>
+          <h2>Tell us when you&rsquo;re <em>coming</em></h2>
+        </header>
+
+        <ol class="steps" aria-label="Reservation progress">
+          <li class="is-current">Date &amp; time</li>
+          <li>Party</li>
+          <li>Details</li>
+          <li>Sent</li>
+        </ol>
+
+        <form class="booking" id="booking" novalidate>
+          <fieldset class="step is-active" data-step="0">
+            <legend class="sr">Date and time</legend>
+            <div class="row">
+              <label>Date<input type="date" name="date" required></label>
+              <label>Time
+                <select name="time" required>
+                  <option value="">Choose a time</option>
+                  <option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option>
+                  <option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option>
+                </select>
+              </label>
+            </div>
+            <div class="step__nav"><span></span><button type="button" class="btn btn--dark" data-next>Continue</button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="1">
+            <legend class="sr">Party size and seating</legend>
+            <p class="field-label" id="guestsLabel">Guests</p>
+            <div class="choices" role="radiogroup" aria-labelledby="guestsLabel">
+              <label><input type="radio" name="guests" value="1" required><span>1</span></label>
+              <label><input type="radio" name="guests" value="2" checked><span>2</span></label>
+              <label><input type="radio" name="guests" value="3"><span>3</span></label>
+              <label><input type="radio" name="guests" value="4"><span>4</span></label>
+              <label><input type="radio" name="guests" value="5"><span>5</span></label>
+              <label><input type="radio" name="guests" value="6"><span>6</span></label>
+              <label><input type="radio" name="guests" value="7+"><span>7+</span></label>
+            </div>
+            <p class="field-label" id="seatLabel">Seating</p>
+            <div class="choices choices--wide" role="radiogroup" aria-labelledby="seatLabel">
+              <label><input type="radio" name="seat" value="Dining Room" checked><span>Dining Room</span></label>
+              <label><input type="radio" name="seat" value="Chef's Counter"><span>Chef&rsquo;s Counter</span></label>
+              <label><input type="radio" name="seat" value="The Bar"><span>The Bar</span></label>
+            </div>
+            <div class="step__nav"><button type="button" class="btn btn--line" data-back>Back</button><button type="button" class="btn btn--dark" data-next>Continue</button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="2">
+            <legend class="sr">Your details</legend>
+            <div class="row">
+              <label>Name<input type="text" name="name" autocomplete="name" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+            <label>Occasion or notes<textarea name="notes" rows="3" placeholder="Allergies, a birthday, a favourite table"></textarea></label>
+            <div class="step__nav"><button type="button" class="btn btn--line" data-back>Back</button><button type="submit" class="btn btn--dark">Send request</button></div>
+          </fieldset>
+
+          <div class="step step--done" data-step="3" tabindex="-1">
+            <h3>Request <em>received.</em></h3>
+            <p id="summary"></p>
+            <p>We confirm every table personally by email within a few hours.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="visit">
+      <div class="wrap visit__grid">
+        <div class="reveal">
+          <p class="label">Visit</p>
+          <h2>Find the <em>fire.</em></h2>
+        </div>
+        <div class="visit__col reveal">
+          <h3>Hours</h3>
+          <p>Tuesday to Thursday, 17:30 to 23:00<br>Friday and Saturday, 17:30 to 00:30<br>Sunday, 12:00 to 21:00<br>Closed Mondays</p>
+        </div>
+        <div class="visit__col reveal">
+          <h3>Find us</h3>
+          <p>128 Hearth Street<br>
+            <a href="mailto:table@cendre.com">table@cendre.com</a><br>
+            <a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+          <a class="link" href="https://maps.google.com" target="_blank" rel="noopener">Open in Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="logo" href="#top" aria-label="Cendre, back to top">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c1.6 3.6 6 6 6 11.6a6 6 0 0 1-12 0c0-3 1.6-4.8 2.6-6.6.2 1.8 1 3 2.2 3.4C14.4 10.6 14.8 7.6 16 5z"/></svg>
+        <span>Cendre</span>
+      </a>
+      <ul class="footer__links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#spaces">Spaces</a></li>
+        <li><a href="#private">Private Dining</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Cendre. Wood fire &amp; cellar.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
